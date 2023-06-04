@@ -15,16 +15,17 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Update the primary color to the desired blue shade
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#E0FCFF',
+          200: '#B2F5FF',
+          300: '#81EFFF',
+          400: '#4BE1FF',
+          500: '#1FB6FF',
+          600: '#1A9FDA',
+          700: '#1378B5',
+          800: '#0C518F',
+          900: '#052B6A',
         },
         gray: {
           100: '#f7fafc',
