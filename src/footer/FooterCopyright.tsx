@@ -1,7 +1,7 @@
 import { AppConfig } from '../utils/AppConfig';
 
 const FooterCopyright = () => (
-  <div className="footer-copyright">
+  <div className="footer-copyright text-brown-800">
     © Copyright {new Date().getFullYear()} {AppConfig.title}. Not a real website.
     {/*
      * PLEASE READ THIS SECTION
@@ -12,7 +12,7 @@ const FooterCopyright = () => (
     <style jsx>
       {`
         .footer-copyright :global(a) {
-          @apply text-primary-500;
+          @apply text-brown-500;
         }
 
         .footer-copyright :global(a:hover) {
