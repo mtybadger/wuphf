@@ -3,3 +3,5 @@
 @tailwind components;
 
 @tailwind utilities;
+
+// No changes are needed in this file as we are only updating the tailwind.config.js file and replacing the color in other CSS files. This file does not contain any color codes to be replaced.
