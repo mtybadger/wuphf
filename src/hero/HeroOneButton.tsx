@@ -8,10 +8,12 @@ type IHeroOneButtonProps = {
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header className="text-center">
-    <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
+    {/* Updated the text color to use the custom pink color */}
+    <h1 className="text-5xl text-pink-500 font-bold whitespace-pre-line leading-hero">
       {props.title}
     </h1>
-    <div className="text-2xl mt-4 mb-16">{props.description}</div>
+    {/* Updated the text color to use the custom pink color */}
+    <div className="text-2xl text-pink-500 mt-4 mb-16">{props.description}</div>
 
     {props.button}
   </header>
