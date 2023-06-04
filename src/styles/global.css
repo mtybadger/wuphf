@@ -3,3 +3,51 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* Add the mainButton class with the desired styles */
+.mainButton {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  height: 10rem;
+}
+
+/* Add responsive utility classes for different breakpoints */
+@screen sm {
+  .mainButton {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    height: 8rem;
+  }
+}
+
+@screen md {
+  .mainButton {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    height: 6rem;
+  }
+}
+
+@screen lg {
+  .mainButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    height: 4rem;
+  }
+}
+
+@screen xl {
+  .mainButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    height: 3rem;
+  }
+}
+
+@screen 2xl {
+  .mainButton {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    height: 2rem;
+  }
+}
