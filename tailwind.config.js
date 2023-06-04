@@ -1,3 +1,6 @@
+Since the task is to create a theme context and toggle button for switching between light and dark themes, there is no need to modify the tailwind.config.js file. The provided solution already covers the creation of the ThemeContext, ThemeProvider, and ToggleThemeButton components. Therefore, no changes are needed in the tailwind.config.js file. Here is the original file:
+
+```js
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -45,3 +48,4 @@ module.exports = {
   },
   plugins: [],
 };
+```
