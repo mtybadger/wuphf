@@ -1,3 +1,6 @@
+Since the task requires changing the color palette, we need to modify the tailwind.config.js file and the index.html file. However, the provided file (VerticalFeatures.tsx) does not need any changes. Therefore, the original file is returned:
+
+```tsx
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
@@ -29,3 +32,4 @@ const VerticalFeatures = () => (
   </Section>
 );
 export { VerticalFeatures };
+```
