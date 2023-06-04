@@ -1,8 +1,41 @@
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
-const VerticalFeatures = () => (
+// Function to find dog-related text and return a list of tuples containing the text found and its location in the HTML
+const find_dog_text = (page_content) => {
+  const dog_related_words = ["dog", "puppy", "canine", "barks", "bark"];
+  const dog_text_locations = [];
 
+  dog_related_words.forEach((word) => {
+    let regex = new RegExp(`\\b${word}\\b`, "gi");
+    let match;
+    while ((match = regex.exec(page_content)) !== null) {
+      dog_text_locations.push([match.index, match[0]]);
+    }
+  });
+
+  return dog_text_locations;
+};
+
+// Function to replace text at specified locations with new text
+const replace_text = (page_content, replacements) => {
+  let new_content = page_content;
+  replacements.forEach(([location, new_text]) => {
+    new_content = new_content.slice(0, location) + new_text + new_content.slice(location + new_text.length);
+  });
+  return new_content;
+};
+
+// Dictionary to map dog-related words to equivalent cat-related words
+const dog_to_cat = {
+  dog: "cat",
+  puppy: "kitten",
+  canine: "feline",
+  barks: "meows",
+  bark: "meow",
+};
+
+const page_content = `
   <Section
     title="Communicate with Your Canine Companion"
     description="Finally, understand what your dog is trying to say with Woof.ai. Our groundbreaking AI-powered device translates your dog's barks into human language, bringing you closer to your furry friend."
@@ -27,5 +60,15 @@ const VerticalFeatures = () => (
       imageAlt="Tailored Training and Behavior Insights"
     />
   </Section>
+`;
+
+const dog_text_locations = find_dog_text(page_content);
+const cat_text_replacements = dog_text_locations.map(([location, text]) => [location, dog_to_cat[text.toLowerCase()]]);
+
+const updated_page_content = replace_text(page_content, cat_text_replacements);
+
+const VerticalFeatures = () => (
+  <div dangerouslySetInnerHTML={{ __html: updated_page_content }} />
 );
+
 export { VerticalFeatures };
