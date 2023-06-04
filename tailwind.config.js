@@ -15,18 +15,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        // Update the primary color to the desired blue shade
-        primary: {
-          100: '#E0FCFF',
-          200: '#B2F5FF',
-          300: '#81EFFF',
-          400: '#4BE1FF',
-          500: '#1FB6FF',
-          600: '#1A9FDA',
-          700: '#1378B5',
-          800: '#0C518F',
-          900: '#052B6A',
-        },
+        // Update the primary color to the desired green color
+        primary: '#4CAF50',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
