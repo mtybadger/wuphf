@@ -3,3 +3,5 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* No changes needed in this file as the color changes are made in tailwind.config.js and index.html */
