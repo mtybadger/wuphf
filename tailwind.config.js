@@ -41,6 +41,21 @@ module.exports = {
       lineHeight: {
         hero: '4.5rem',
       },
+      // Add custom padding and height for the mainButton
+      padding: {
+        'main-btn': '2rem 4rem',
+      },
+      height: {
+        'main-btn': '10rem',
+      },
+      // Add responsive styles for the mainButton
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
