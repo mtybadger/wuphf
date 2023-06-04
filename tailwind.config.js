@@ -1,3 +1,8 @@
+// Define the new color variables at the top of the file
+const primary = '#7C3AED';
+const secondary = '#6D28D9';
+const accent = '#5B21B6';
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -15,16 +20,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Update the primary color shades with the new purple shades
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: primary,
+          200: secondary,
+          300: accent,
         },
         gray: {
           100: '#f7fafc',
