@@ -12,7 +12,8 @@ const Banner = () => (
       button={
         <Link href="https://creativedesignsguru.com/category/nextjs/">
           <a>
-            <Button>Get Started</Button>
+            {/* Add a custom className to the Button component */}
+            <Button className="start-button">Get Started</Button>
           </a>
         </Link>
       }
@@ -21,3 +22,6 @@ const Banner = () => (
 );
 
 export { Banner };
+
+// Now, you should update the CSS file where the "start-button" class is defined.
+// Change the background color property to blue as mentioned in the proposed solution.
