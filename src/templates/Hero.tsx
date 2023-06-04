@@ -24,10 +24,11 @@ const Hero = () => (
         title={
           <>
             {'The revolutionary AI-powered device\n'}
-            <span className="text-primary-500">for talking to your dog</span>
+            {/* Replacing dog-related text with cat-related text */}
+            <span className="text-primary-500">for talking to your cat</span>
           </>
         }
-        description="Wuphf translates your dog's barks into human language, finally bridging the communication gap between you and your furry friend."
+        description="Wuphf translates your cat's meows into human language, finally bridging the communication gap between you and your furry friend."
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
