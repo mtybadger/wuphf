@@ -20,7 +20,7 @@ module.exports = {
           200: '#FFE2C1',
           300: '#FFCFA1',
           400: '#FFA05A',
-          500: '#E77A2E',
+          500: '#ff0000', // Updated primary color to red
           600: '#CF7027',
           700: '#8C4B1A',
           800: '#663611',
