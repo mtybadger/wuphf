@@ -32,11 +32,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-white bg-amber-800;
+            @apply text-white bg-blue; // Changed the background color to blue
           }
 
           .btn-primary:hover {
-            @apply bg-amber-900;
+            @apply bg-blue-900; // Changed the hover background color to a darker blue
           }
         `}
       </style>
