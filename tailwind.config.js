@@ -15,16 +15,17 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Update primary color values with red shades
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#ffcccc',
+          200: '#ffb3b3',
+          300: '#ff9999',
+          400: '#ff8080',
+          500: '#ff6666',
+          600: '#ff4d4d',
+          700: '#ff3333',
+          800: '#ff1a1a',
+          900: '#ff0000',
         },
         gray: {
           100: '#f7fafc',
