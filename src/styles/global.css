@@ -3,3 +3,22 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* Locate the "Get Started" button component in index.html and identify its current CSS class or style. In this case, it's "start-button". */
+
+/* Modify the existing CSS class or create a new one. In this case, we will modify the existing "start-button" class. Change the background color to blue and keep other properties as they are. */
+
+.start-button {
+  background: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* The "start-button" class is already applied to the button in index.html, so no changes needed. */
+
+/* Test the changes by viewing index.html in multiple browsers (Chrome, Firefox, Safari). */
