@@ -13,8 +13,25 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     </h1>
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
 
-    {props.button}
+    {/* Add a custom class to the button for styling */}
+    <div className="custom-start-button">
+      {props.button}
+    </div>
   </header>
 );
 
 export { HeroOneButton };
+
+// In your CSS file, add the following class to style the button:
+/*
+.custom-start-button button {
+  background: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+*/
