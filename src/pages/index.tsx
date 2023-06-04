@@ -1,5 +1,3 @@
-import { Base } from '../templates/Base';
+Since the task requires modifying the button element on the homepage, we need to locate the button in the `Base` component and make the necessary changes there. However, the provided code only imports and renders the `Base` component, and we don't have access to the `Base` component's code. 
 
-const Index = () => <Base />;
-
-export default Index;
+In this case, we cannot make any changes to the provided `src/pages/index.tsx` file. You should locate the `Base` component file and make the necessary changes there, following the proposed solution steps.
