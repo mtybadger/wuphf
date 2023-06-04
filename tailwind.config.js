@@ -15,16 +15,17 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Update primary color to purple shades
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#f2e8ff',
+          200: '#e6d2ff',
+          300: '#d8b9ff',
+          400: '#cba2ff',
+          500: '#bf8fff',
+          600: '#b37bff',
+          700: '#a366ff',
+          800: '#934dff',
+          900: '#822bff',
         },
         gray: {
           100: '#f7fafc',
