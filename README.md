@@ -1,35 +1,57 @@
+```markdown
+Meaow.ai
+
+# Replace String Function
+
 ```python
-# Function to replace a string in a file
 def replace_string(file_path, old_string, new_string):
     with open(file_path, 'r') as file:
-        file_data = file.read()
-
-    file_data = file_data.replace(old_string, new_string)
-
+        content = file.read()
+    content = content.replace(old_string, new_string)
     with open(file_path, 'w') as file:
-        file.write(file_data)
-
-# Function to replace words in a file
-def replace_words(file_path, old_words, new_words):
-    with open(file_path, 'r') as file:
-        file_data = file.read()
-
-    for old_word, new_word in zip(old_words, new_words):
-        file_data = file_data.replace(old_word, new_word)
-
-    with open(file_path, 'w') as file:
-        file.write(file_data)
-
-# Replace "Wuphf" with "Meaow.ai"
-replace_string('README.md', 'Wuphf', 'Meaow.ai')
-
-# Replace dog-related words with cat-related words
-dog_words = ["dog", "puppy", "canine", "pooch"]
-cat_words = ["cat", "kitten", "feline", "tabby"]
-replace_words('README.md', dog_words, cat_words)
-
-# Note: Replacing dog images with cat images is not possible in a .md file.
-# This would require updating the image sources in HTML files or renaming the image files themselves.
+        file.write(content)
 ```
 
-The updated code includes the functions to replace strings and words in the given file. The dog-related words are replaced with cat-related words, and "Wuphf" is replaced with "Meaow.ai". However, replacing images is not possible in a .md file, so that part of the task is not applicable here.
+# Replace Words Function
+
+```python
+def replace_words(file_path, old_words, new_words):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    for old_word, new_word in zip(old_words, new_words):
+        content = content.replace(old_word, new_word)
+    with open(file_path, 'w') as file:
+        file.write(content)
+```
+
+# Replace Images Function
+
+```python
+def replace_images(file_path, old_images, new_images):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    for old_image, new_image in zip(old_images, new_images):
+        content = content.replace(old_image, new_image)
+    with open(file_path, 'w') as file:
+        file.write(content)
+```
+
+# Usage
+
+```python
+file_path = "path/to/your/file.html"
+
+# Step 1: Update all instances of "Wuphf" to "Meaow.ai"
+replace_string(file_path, "Wuphf", "Meaow.ai")
+
+# Step 2: Replace all dog-related text with cat-related text
+dog_words = ["dog", "puppy", "canine", "pooch"]
+cat_words = ["cat", "kitten", "feline", "tabby"]
+replace_words(file_path, dog_words, cat_words)
+
+# Step 3: Replace all dog images with cat images
+dog_images = ["dog1.jpg", "dog2.jpg", "dog3.jpg"]
+cat_images = ["cat1.jpg", "cat2.jpg", "cat3.jpg"]
+replace_images(file_path, dog_images, cat_images)
+```
+```
