@@ -14,9 +14,37 @@ const CTABanner = (props: ICTABannerProps) => (
     </div>
 
     <div className="whitespace-no-wrap mt-3 sm:mt-0 sm:ml-2">
-      {props.button}
+      {/* Add the mainButton class to the button */}
+      {React.cloneElement(props.button, { className: 'mainButton' })}
     </div>
   </div>
 );
 
 export { CTABanner };
+
+// Add the following CSS to your styles.css file
+/*
+.mainButton {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  height: 10rem;
+}
+
+@media (min-width: 640px) {
+  .mainButton {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    height: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainButton {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    height: 6rem;
+  }
+}
+
+// And so on for lg, xl, and 2xl breakpoints
+*/
