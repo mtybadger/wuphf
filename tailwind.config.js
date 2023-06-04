@@ -1,3 +1,6 @@
+Since the task is to change the "Get Started" button color to blue, we need to modify the primary color in the tailwind.config.js file. Here's the updated code:
+
+```javascript
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -16,15 +19,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#EBF8FF', // Changed primary color to a lighter shade of blue
+          200: '#BEE3F8',
+          300: '#90CDF4',
+          400: '#63B3ED',
+          500: '#4299E1', // Changed primary color to blue
+          600: '#3182CE',
+          700: '#2B6CB0',
+          800: '#2C5282',
+          900: '#2A4365',
         },
         gray: {
           100: '#f7fafc',
@@ -45,3 +48,6 @@ module.exports = {
   },
   plugins: [],
 };
+```
+
+I have updated the primary color to blue and also added a lighter shade of blue for the primary color. Now, you can use the primary color in your Tailwind CSS classes to apply the blue color to the "Get Started" button.
