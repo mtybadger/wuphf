@@ -1,3 +1,6 @@
+// Import the new color shades
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -15,16 +18,17 @@ module.exports = {
     },
     extend: {
       colors: {
+        // Update the primary colors with the new purple shades
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#E9D5FF',
+          200: '#D8B4FE',
+          300: '#C084FC',
+          400: '#A855F7',
+          500: '#9333EA',
+          600: '#7c3aed',
+          700: '#6b21a8',
+          800: '#4c1d95',
+          900: '#3C1D6F',
         },
         gray: {
           100: '#f7fafc',
