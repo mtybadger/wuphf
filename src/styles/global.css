@@ -1,5 +1,11 @@
+There is no need to make any changes to the src/styles/global.css file for this task. The provided solution does not require any modifications to the global CSS file. The theme toggling functionality will be handled by the ThemeContext and ThemeProvider components, and the ToggleThemeButton component will be used to switch between themes.
+
+Here is the original file:
+
+```css
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+```
