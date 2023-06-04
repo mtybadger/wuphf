@@ -3,3 +3,29 @@
 @tailwind components;
 
 @tailwind utilities;
+
+// Add the following code to your tailwind.config.js file to extend the color palette with the custom orange shades.
+// This code should not be added to the global.css file, but rather to the tailwind.config.js file.
+
+/*
+extend: { 
+  colors: {
+    'orange': {
+      50: '#fff3e0',
+      100: '#ffe0b2',
+      200: '#ffcc80',
+      300: '#ffb74d',
+      400: '#ffa726',
+      500: '#ff9800',
+      600: '#fb8c00',
+      700: '#f57c00',
+      800: '#ef6c00',
+      900: '#e65100'
+    }
+  } 
+},
+*/
+
+// After extending the color palette in the tailwind.config.js file, you can use the custom orange shades in your CSS classes.
+// For example, you can replace existing color classes like 'text-blue-500' or 'bg-red-200' with the new 'orange' shades.
+// Example: Replace 'text-blue-500' with 'text-orange-500'.
