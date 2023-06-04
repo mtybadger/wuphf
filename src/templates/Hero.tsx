@@ -8,7 +8,7 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-gray-100" className="cat-background"> {/* Add a cat-themed background image */}
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
@@ -23,11 +23,16 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The revolutionary AI-powered device\n'}
-            <span className="text-primary-500">for talking to your dog</span>
+            {/* Update the title and add cat-themed font or font color */}
+            <span className="text-cat-theme">Welcome to the Cat Corner</span>
           </>
         }
-        description="Wuphf translates your dog's barks into human language, finally bridging the communication gap between you and your furry friend."
+        description={
+          <>
+            {/* Update the description and add cat-themed font or font color */}
+            <span className="text-cat-theme">We love all things feline!</span>
+          </>
+        }
         button={
           <Link href="https://creativedesignsguru.com/category/nextjs/">
             <a>
