@@ -37,6 +37,19 @@ module.exports = {
           800: '#2d3748',
           900: '#1a202c',
         },
+        // Add the custom orange color palette
+        orange: {
+          50: '#fff3e0',
+          100: '#ffe0b2',
+          200: '#ffcc80',
+          300: '#ffb74d',
+          400: '#ffa726',
+          500: '#ff9800',
+          600: '#fb8c00',
+          700: '#f57c00',
+          800: '#ef6c00',
+          900: '#e65100',
+        },
       },
       lineHeight: {
         hero: '4.5rem',
@@ -45,3 +58,6 @@ module.exports = {
   },
   plugins: [],
 };
+
+// The custom orange color palette has been added to the tailwind.config.js file.
+// Now, you can replace existing color classes in your CSS files with the new 'orange' color classes as needed.
