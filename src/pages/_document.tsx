@@ -7,7 +7,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
+        <Head>
+          {/* Step 2: Update the title to "Hello World" */}
+          <title>Hello World</title>
+        </Head>
         <body>
           <Main />
           <NextScript />
@@ -18,3 +21,6 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+
+// The above code updates the page title to "Hello World" as per the plan.
+// The developer should now follow steps 3 and 4 to verify the change in the local development environment and commit and push the changes to the repository.
