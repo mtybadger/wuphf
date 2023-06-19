@@ -23,8 +23,8 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The revolutionary AI-powered device\n'}
-            <span className="text-primary-500">for talking to your dog</span>
+            {/* Update the title to "Hello World" */}
+            Hello World
           </>
         }
         description="Wuphf translates your dog's barks into human language, finally bridging the communication gap between you and your furry friend."
