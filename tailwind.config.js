@@ -16,15 +16,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: '#FFF6EB',
-          200: '#FFE2C1',
-          300: '#FFCFA1',
-          400: '#FFA05A',
-          500: '#E77A2E',
-          600: '#CF7027',
-          700: '#8C4B1A',
-          800: '#663611',
-          900: '#402108',
+          100: '#E0F5FF',
+          200: '#B3E5FF',
+          300: '#80D4FF',
+          400: '#4DC3FF',
+          500: '#1FB6FF',
+          600: '#1A9EDB',
+          700: '#1476B7',
+          800: '#0E4E93',
+          900: '#08266F',
         },
         gray: {
           100: '#f7fafc',
@@ -45,3 +45,6 @@ module.exports = {
   },
   plugins: [],
 };
+
+// Step 2: Update the primary color variable to the desired blue hex code, e.g. '#1fb6ff'.
+// I have updated the primary color palette to a blue color scheme based on the provided hex code.
