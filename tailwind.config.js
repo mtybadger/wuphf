@@ -26,6 +26,10 @@ module.exports = {
           800: '#663611',
           900: '#402108',
         },
+        // Update the primary color to the desired blue hex code
+        blue: {
+          100: '#1fb6ff',
+        },
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
@@ -45,3 +49,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// After updating the code, follow the steps in the proposed solution to rebuild the Tailwind CSS and check the landing page for the updated color scheme.
